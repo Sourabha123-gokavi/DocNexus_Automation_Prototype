@@ -18,25 +18,6 @@ DocNexus is an intelligent AI-powered platform to process HCP (Healthcare Profes
 | Storage      | File-based (local folder or cloud)       |
 | Styling      | Custom CSS with Netflix-style theme      |
 
----
-
-## 📁 Project Structure
-
-docnexus-frontend/
-├── src/
-│ ├── components/ # UI Components
-│ │ ├── UploadForm.jsx
-│ │ ├── MediaManager.jsx
-│ │ ├── TranscriptEditor.jsx
-│ │ ├── CRMIntegration.jsx
-│ │ └── RAGQuery.jsx
-│ ├── styles/ # CSS files
-│ ├── App.jsx # Main routing logic
-│ └── index.js # Entry point
-├── public/
-├── README.md
-└── package.json
-
 
 ✅ Features
 
