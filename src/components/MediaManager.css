@@ -1,0 +1,127 @@
+.media-card {
+  width: 100%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.media-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.media-refresh-btn {
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+}
+.media-refresh-btn:hover {
+  background-color: #084ec1;
+}
+
+.media-error {
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.media-empty {
+  font-size: 1rem;
+  color: #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.media-item {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.media-thumb {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.media-info {
+  flex: 1;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+.media-info p {
+  margin: 0.2rem 0;
+}
+
+.media-action-btn {
+  background-color: #17a2b8;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+.media-action-btn:hover {
+  background-color: #138496;
+}
+
+/* Swiper adjustments */
+.swiper {
+  padding: 1rem 0;
+}
+.swiper-slide {
+  height: auto;
+}
+
+/* Status badge styles */
+.media-status {
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.media-status.ready       { background: #28a745; color: #fff; }
+.media-status.processing  { background: #ffc107; color: #000; }
+.media-status.failed      { background: #dc3545; color: #fff; }
+.media-status.unknown     { background: #6c757d; color: #fff; }
+
+.media-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper {
+  padding: 1rem 0;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.media-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+

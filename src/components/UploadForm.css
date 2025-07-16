@@ -1,0 +1,110 @@
+.upload-card-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.left-glow {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.right-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.upload-form label {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.upload-form input[type="text"] {
+  padding: 0.5rem;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: white;
+}
+
+.upload-btn {
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background: #0d6efd;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upload-msg.success { color: #28a745; }
+.upload-msg.error   { color: #dc3545; }
+
+/* Reuse your previous glowing styles */
+.input-div {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgb(1, 235, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px white;
+  animation: flicker 2s linear infinite;
+}
+
+.icon {
+  color: rgb(1, 235, 252);
+  font-size: 2rem;
+  cursor: pointer;
+  animation: iconflicker 2s linear infinite;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+@keyframes flicker {
+  0%, 10%, 30%, 100% {
+    border: 2px solid rgb(1, 235, 252);
+    box-shadow: 0px 0px 100px rgb(1, 235, 252), inset 0px 0px 10px rgb(1, 235, 252), 0px 0px 5px white;
+  }
+  5%, 25% {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+@keyframes iconflicker {
+  0%, 10%, 30%, 100% {
+    opacity: 1;
+  }
+  5%, 25% {
+    opacity: 0.2;
+  }
+}

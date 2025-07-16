@@ -1,0 +1,89 @@
+/* src/components/UploadForm.css */
+
+/* TranscriptEditor Styling */
+.transcript-card--netflix {
+  background: #1c1c1e;
+  color: #eaeaea;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.transcript-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+.transcript-status,
+.transcript-error {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.transcript-status {
+  background-color: #0d6efd33;
+  color: #0d6efd;
+}
+
+.transcript-error {
+  background-color: #dc354533;
+  color: #dc3545;
+}
+
+.transcript-textarea {
+  width: 100%;
+  min-height: 240px;
+  background: #2c2c2e;
+  color: #f5f5f5;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.transcript-textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+.transcript-save-btn {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.transcript-save-btn:hover:not(:disabled) {
+  background-color: #0a58ca;
+}
+
+.transcript-save-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sentiment-wrapper {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+}
+
+.sentiment-wrapper h4 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+

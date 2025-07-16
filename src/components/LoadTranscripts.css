@@ -1,0 +1,49 @@
+/* src/components/LoadTranscripts.css */
+
+.load-card--netflix {
+  background: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.load-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.load-btn {
+  background: #0d6efd;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.load-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.load-btn:hover:not(:disabled) {
+  background: #0b5ed7;
+}
+
+.load-msg {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.load-msg.success {
+  color: #28a745;
+}
+
+.load-msg.error {
+  color: #dc3545;
+}

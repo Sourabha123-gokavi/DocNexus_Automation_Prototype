@@ -1,0 +1,75 @@
+/* src/components/RAGQuery.css */
+
+.rag-card--netflix {
+  background: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.rag-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.rag-error {
+  color: #dc3545;
+  margin-bottom: 0.5rem;
+}
+
+.rag-input {
+  width: 100%;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-family: sans-serif;
+}
+
+.rag-input:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+.rag-btn {
+  background: #0d6efd;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.rag-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.rag-btn:hover:not(:disabled) {
+  background: #0b5ed7;
+}
+
+.rag-answer {
+  margin-top: 1rem;
+  background: #222;
+  padding: 1rem;
+  border-radius: 4px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.rag-answer h4 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.rag-answer pre {
+  white-space: pre-wrap;
+  color: #e0e0e0;
+}
