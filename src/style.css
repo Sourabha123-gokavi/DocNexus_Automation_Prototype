@@ -1,5 +1,3 @@
-/* src/style.css */
-
 /* Base resets */
 * {
   margin: 0;
@@ -7,85 +5,57 @@
   box-sizing: border-box;
 }
 
-/* Dark background & light text */
-.app--netflix {
-  background-color: #141414;
+html, body, #root {
+  height: 100%;
+  background-color: #0d47a1; /* Navy Blue */
   color: #f5f5f5;
-  min-height: 100vh;
   font-family: sans-serif;
 }
 
-/* Navbar with blue accent */
+/* App container */
+.app--netflix {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
 .navbar--netflix {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 2rem;
   height: 60px;
-  background: #0d47a1; /* Deep blue accent */
+  background: #0d47a1;
   position: sticky;
   top: 0;
   z-index: 100;
 }
+
 .navbar--netflix .logo {
   font-size: 1.5rem;
   font-weight: bold;
   margin-right: 2rem;
+  white-space: nowrap;
 }
+
 .navbar--netflix .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  align-items: center;
+  margin: 0;
 }
+
 .navbar--netflix .nav-links li {
   cursor: pointer;
   opacity: 0.7;
   transition: opacity 0.2s;
 }
+
 .navbar--netflix .nav-links li:hover {
   opacity: 1;
   color: #bbdefb;
-}
-
-/* Main content padding */
-.content--netflix {
-  padding: 2rem;
-}
-
-/* Section title */
-.section-title {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-/* Carousel rows */
-.carousel {
-  display: flex;
-  flex-wrap: nowrap;      /* keep cards in a single row */
-  overflow-x: auto;
-  gap: 1rem;
-  padding-bottom: 1rem;
-  scroll-behavior: smooth;
-}
-.carousel::-webkit-scrollbar {
-  height: 8px;
-}
-.carousel::-webkit-scrollbar-thumb {
-  background: #444;
-  border-radius: 4px;
-}
-
-/* Netflix‑style card */
-.card--netflix {
-  background: #222;
-  border-radius: 8px;
-  padding: 1rem;
-  min-width: 320px;        /* slightly wider for readability */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-  flex-shrink: 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .navbar--netflix .nav-links a {
@@ -106,3 +76,33 @@ html {
   font-weight: bold;
 }
 
+/* Add user name to far right */
+.navbar--netflix .user-profile {
+  margin-left: 2rem;
+  color: #f5f5f5;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Main content area */
+.content--netflix {
+  padding: 2rem;
+  background-color: #141414; /* dark gray content background */
+  flex-grow: 1;
+}
+
+/* Section title */
+.section-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Summary button */
+.summary-download-btn {
+  background: transparent;
+  color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
